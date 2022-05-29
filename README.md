@@ -4,8 +4,9 @@ Simple and fast PHP ban bad words you want
 
 #### Require
 * PHP >= 7.4
+* composer
 
-#### Use with composer
+#### Simple usage
 
 ```
 composer init
@@ -14,12 +15,14 @@ composer require grd/ban-words
 
 ```php
 
+use App\Grd\BanWords\BanWords;
+
 require_once './vendor/autoload.php';
 
 // 1. Initialize 
 $banWords = new BanWords('hello noob you are bad !');
 
-// verry simple
+// very simple
 var_dump($banWords->check());
 
 // get true if bad words spotted
@@ -33,15 +36,7 @@ $banWords->check()->getFilter();        # return "hello *** you are *** !"
 
 ```
 
-#### Use without composer
-
-``` 
-
 ```
-
-
-
-```
-This script is verry simple .
+This script is very simple .
 You are welcome to improve it !
 ```
