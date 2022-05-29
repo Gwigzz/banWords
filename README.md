@@ -1,8 +1,12 @@
 ## Simple PHP ban bad words
 
-Simple and fast PHP ban bad words you want
+Simple and fast PHP ban bad words you want.
 
-You need to set the list of bad words in 'BadWords.php'
+You need to set the bad words in  `vendor/src/BadWords.php` in array of `list` method.
+
+### Inportant note
+
+banWords does not and never will prevent XSS or SQL Injection.
 
 #### Require
 * PHP >= 7.4
@@ -11,7 +15,6 @@ You need to set the list of bad words in 'BadWords.php'
 #### Simple usage
 
 ```
-composer init
 composer require grd/ban-words
 ```
 
