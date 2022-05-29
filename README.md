@@ -18,7 +18,7 @@ $banWords = new BanWords('hello noob you are bad !');
 var_dump($banWords->check());
 
 // get true if bad words spotted
-$banWords->check()->getSignal();        # true / false
+$banWords->check()->getSignal();        # return true / false
 
 // get normal characters
 $banWords->check()->getCharacters();    # return "hello noob you are bad !"
@@ -26,5 +26,9 @@ $banWords->check()->getCharacters();    # return "hello noob you are bad !"
 // get ban words
 $banWords->check()->getFilter();        # return "hello *** you are *** !"
 
+```
 
+```
+This script is verry simple .
+You are welcome to improve it !
 ```

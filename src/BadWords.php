@@ -3,7 +3,7 @@
 namespace App\Grd\BanWords;
 
 /**
- * @author Guillaume Rigourd <guillaumergd@hotmail.com>
+ * @author Guillaume Rigourd <grd@email.fr>
  */
 abstract class BadWords
 {
