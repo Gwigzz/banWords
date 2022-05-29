@@ -2,6 +2,8 @@
 
 Simple and fast PHP ban bad words you want
 
+You need to set the list of bad words in 'BadWords'
+
 #### Require
 * PHP >= 7.4
 * composer

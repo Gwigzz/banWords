@@ -16,6 +16,7 @@ abstract class BadWords
      */
     protected function list(): array
     {
+        // set more bad words
         return [
             'bad',
             'noob',
