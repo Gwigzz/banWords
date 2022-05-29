@@ -2,16 +2,19 @@
     "name": "grd/ban-words",
     "description": "A simple PHP ban words",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "App\\Grd\\BanWords\\": "src/"
-        }
+    "require": {
+        "php": ">=7.4"
     },
     "authors": [
         {
             "name": "Guillaume Rigourd",
-            "email": "grd@email.fr"
+            "email": "grdevphp@gmail.com",
+            "homepage": "https://guillaumerigourd.fr"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "App\\Grd\\BanWords\\": "src/"
+        }
+    }
 }
