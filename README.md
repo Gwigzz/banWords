@@ -1,4 +1,4 @@
-### A simple ban words
+## A simple ban words
 Simple and fast PHP ban words you want
 
 #### Require
@@ -12,9 +12,19 @@ Simple and fast PHP ban words you want
 require_once './vendor/autoload.php';
 
 // 1. Initialize 
-$banWords = new BanWords('Hello noob !');
+$banWords = new BanWords('hello noob you are bad !');
 
-// simple check
-$banWords->check();
+// verry simple
+var_dump($banWords->check());
+
+// get true if bad words spotted
+$banWords->check()->getSignal();        # true / false
+
+// get normal characters
+$banWords->check()->getCharacters();    # return "hello noob you are bad !"
+
+// get ban words
+$banWords->check()->getFilter();        # return "hello *** you are *** !"
+
 
 ```
