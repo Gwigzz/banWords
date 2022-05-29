@@ -9,7 +9,7 @@ use App\Grd\BanWords\BadWords;
  * 
  * Information : The problem to the class is this. If you have the same bad words, the next bad word is not banned
  * 
- * @author Guillaume Rigourd <grd@email.fr>
+ * @author Guillaume Rigourd <grdevphp@gmail.com>
  */
 class BanWords extends BadWords
 {

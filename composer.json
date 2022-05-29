@@ -1,6 +1,6 @@
 {
     "name": "grd/ban-words",
-    "description": "A simple PHP ban words",
+    "description": "A simple PHP ban bad words",
     "license": "MIT",
     "require": {
         "php": ">=7.4"

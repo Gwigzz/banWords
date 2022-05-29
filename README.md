@@ -1,11 +1,16 @@
-## A simple ban words
-Simple and fast PHP ban words you want
+## Simple PHP ban bad words
+
+Simple and fast PHP ban bad words you want
 
 #### Require
 * PHP >= 7.4
-* composer
 
-#### Configuration
+#### Use with composer
+
+```
+composer init
+composer require grd/ban-words
+```
 
 ```php
 
@@ -27,6 +32,14 @@ $banWords->check()->getCharacters();    # return "hello noob you are bad !"
 $banWords->check()->getFilter();        # return "hello *** you are *** !"
 
 ```
+
+#### Use without composer
+
+``` 
+
+```
+
+
 
 ```
 This script is verry simple .
