@@ -36,7 +36,33 @@ $banWords->check()->getFilter();        # return "hello *** you are *** !"
 
 ```
 
+#### In Symfony controller
+
+```php
+use App\Grd\BanWords\BanWords;
+
+/* Assuming user want to register with the bad words */
+$banWord = new BanWords($user->getUsername());
+
+if($banWord->check()->getSignal()){
+    $this->addFlash('danger', 'Forbidden username');
+    return $this->redirectToRoute('app_home_register');
+}
+
+/* Assuming user want to past a bad comment */
+$banWords = new BanWords($comment->getContent());
+
+// set
+$comment
+    ->setUser($this->getUser())
+    ->setContent($banWords->check()->getFilter())
+    ;
+
+$commentRepository->add($comment);
+
 ```
-This script is very simple .
+
+```
+This script is very simple.
 You are welcome to improve it !
 ```
