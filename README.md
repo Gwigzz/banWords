@@ -6,7 +6,15 @@ Simple and fast PHP ban words you want
 * composer
 
 #### Configuration
-```php 
 
+```php
+
+require_once './vendor/autoload.php';
+
+// 1. Initialize 
+$banWords = new BanWords('Hello noob !');
+
+// simple check
+$banWords->check();
 
 ```
