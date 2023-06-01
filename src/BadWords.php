@@ -3,7 +3,7 @@
 namespace App\Grd\BanWords;
 
 /**
- * @author Guillaume Rigourd <grdevphp@gmail.com>
+ * @author Guillaume Rigourd <grd@php.net>
  */
 abstract class BadWords
 {
